@@ -1,0 +1,144 @@
+@media only screen and (min-width: 600px) {
+	.survey-title {
+		margin-top: 118%;
+	}
+}
+
+.survey-title {
+	margin-top: 8%;
+	font-size: 2.1em;
+	text-align: center;
+}
+
+.survey-info {
+	color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	font-size: 15px;
+	white-space: nowrap;
+}
+
+.survey-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.container {
+	min-height: 100px;
+	width: 300px;
+	background: rgb(236, 251, 255);
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-self: center;
+}
+
+.container > div {
+	text-align: center;
+}
+
+.container > div:hover {
+	cursor: pointer;
+}
+
+.fill {
+	display: flex;
+	height: 100%;
+	flex-grow: 1;
+}
+
+.left {
+	background: var(--brand-purple);
+}
+
+.right {
+	background: var(--brand-blue);
+}
+
+.text {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.option-title {
+	color: rgba(255, 255, 255, 1);
+	font-size: 22px;
+}
+
+.option-size {
+	color: rgba(255, 255, 255, 1);
+	font-size: 20px;
+}
+
+.stats-container {
+	display: flex;
+	flex-direction: column;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 14px;
+	justify-content: flex-end;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.wrap {
+	word-break: break-all;
+}
+
+a {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+.share {
+	margin-top: 20px;
+	padding: 0.5rem 2rem;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+	background: transparent;
+}
+
+.box.flex {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
+/* Ripple effect */
+.ripple {
+	background-position: center;
+	transition: background 0.8s;
+}
+.ripple.blue:hover {
+	background: #2a99ef radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple.blue:active {
+	background-color: #6eb9f7;
+	background-size: 100%;
+	transition: background 0s;
+}
+
+.ripple.purple:hover {
+	background: rgb(226, 119, 208) radial-gradient(circle, transparent 1%, rgb(192, 102, 177) 1%) center/15000%;
+}
+.ripple.purple:active {
+	background-color: rgb(192, 102, 177);
+	background-size: 100%;
+	transition: background 0s;
+}
